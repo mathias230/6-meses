@@ -1,0 +1,35 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Suaviza el scroll */
+    background-color: #f0f0f0; /* Fondo general */
+}
+
+/* Estilo de las secciones */
+.pagina {
+    width: 100%;
+    min-height: 60vh; /* Reducir el tamaño de la sección para mayor compacidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0; /* Reducir el margen entre las secciones */
+    opacity: 0; /* Ocultamos por defecto para la animación */
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Estilo de las imágenes */
+.pagina img {
+    width: 85%; /* Ajustar las imágenes para que ocupen un poco más de espacio */
+    max-width: 100x; /* Limitar el tamaño máximo */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Aparece cuando está visible */
+.pagina.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
